@@ -1,0 +1,70 @@
+.sidebar{
+    flex: 1.25;
+    background-color:  #011627e0;
+    border-right: 1px solid gray;
+    padding: 20px 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #01ff89;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.logo h1{
+    font-size: 24px;
+}
+
+.icon{
+    font-size: 24px;
+}
+.menu-items{
+    margin-top: 50px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    color: #eee;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.item:hover{
+    background: linear-gradient(-90deg, #01ff883f 50%, #01b7ff35 100%);
+border-radius: 5px;
+padding: 10px;
+padding-left: 20px;
+}
+
+
+
+.active{
+background: linear-gradient(-90deg, #01ff89 50%, #01b9ff 100%);
+border-radius: 5px;
+padding: 10px;
+padding-left: 20px;
+}
+
+.btn{
+    padding: 12px 40px;
+    width: 200px;
+    margin-top: 30px;
+    font-size: 16px;
+    background: none;
+    border: 1.25px solid rgb(241, 241, 241);;
+    border-radius: 5px;
+    color: rgb(241, 241, 241);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(241, 241, 241);
+    color: #011627e0;
+
+}

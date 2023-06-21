@@ -1,0 +1,17 @@
+
+:root{
+    --bg: linear-gradient(-90deg, #01ff89 50%, #01b9ff 100%);
+    --bg-color: #011627e0;
+    --green: #01ff89;
+    --blue: #01b9ff
+}
+
+.app{
+    background: #011627;
+    color: white;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
