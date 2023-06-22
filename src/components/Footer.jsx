@@ -3,6 +3,8 @@ import './Footer.css'
 import { BiShuffle, BiSkipNext, BiSkipPrevious} from 'react-icons/bi';
 import { BsFillPlayCircleFill} from 'react-icons/bs';
 import { LuShare2} from 'react-icons/lu';
+import { AiOutlineHeart} from 'react-icons/ai';
+import { GiSpeaker} from 'react-icons/gi';
 
 
 function Footer() {
@@ -35,10 +37,14 @@ function Footer() {
         
        </div>
        <div className="footer-bottom">
-       <p>play</p>
+       <AiOutlineHeart />
+       <GiSpeaker/>
+       <div className='line2'>
+        <div className="circle2"></div>
         </div>
+    </div>
     </div>
   )
 }
 
-export default Footer
+export default Footer;

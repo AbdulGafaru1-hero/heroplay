@@ -1,3 +1,4 @@
 .rightSideBar{
-    flex: 2;
+   flex: 1;
+   background-color: bisque;
 }

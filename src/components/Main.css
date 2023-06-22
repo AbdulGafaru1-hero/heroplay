@@ -1,0 +1,112 @@
+.main{
+    flex: 2;
+overflow: scroll;
+}
+
+.main::-webkit-scrollbar{
+    display: none;
+  }
+
+.hero-section{
+    padding: 20px;
+}
+
+.search-input{
+    align-items: center;
+    padding: 10px;
+    width: 600px;
+    margin: 30px auto;
+    border: 1px solid gray;
+    background-color: var(--bg-color) transparent;
+    border-radius: 5px;
+}
+.input{
+    display: flex;
+}
+.search-icon{
+    color: gray;
+}
+hr{
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+.banner{
+    background-image: url(https://img.freepik.com/free-vector/glowing-shiny-musical-notes-background-design_1017-32856.jpg?w=1060&t=st=1687394782~exp=1687395382~hmac=b2ccb81a561b692382b7e4fa66c36e7ac89cedce2fb8d7aabda616c5004861c4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+    margin: 30px auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.banner-info{
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+   
+}
+.banner-info > h3{
+    font-size: 36px;
+    color: var(--green);
+    width: 300px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.banner-info > p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.banner-info > button{
+    padding: 12px 50px;
+    background: var(--bg);
+    border: none;
+    border-radius: 10px;
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.trending-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.trending-top > h3{
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.icon{
+    margin-left: 5px;
+    font-size: 16px;
+    color: var(--green);
+}
+.trending-top > p{
+    font-size: 14px;
+    color: var(--green);
+    cursor: pointer;
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+.trending-top > p:hover{
+    color: white
+}
+
+.trending-musicCard{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.trending-musicCard::-webkit-scrollbar{
+    display: none;
+  }
