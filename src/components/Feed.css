@@ -1,5 +1,9 @@
 .feed{
     flex: 5.5;
     display: flex;
-    overflow-y: scroll;
+    overflow: scroll;
 }
+
+.feed::-webkit-scrollbar{
+    display: none;
+  }

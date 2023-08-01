@@ -1,0 +1,81 @@
+.trending-musicCard{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.trending-musicCard::-webkit-scrollbar{
+    display: none;
+  }
+
+  .artist-card{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.artist-card::-webkit-scrollbar{
+    display: none;
+  }
+  .trending-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.trending-top > h3{
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.icon{
+    margin-left: 5px;
+    font-size: 16px;
+    color: var(--green);
+}
+.trending-top > p{
+    font-size: 14px;
+    color: var(--green);
+    cursor: pointer;
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+.trending-top > p:hover{
+    color: white
+}
+
+  .Artist-top > p{
+    font-size: 14px;
+    color: var(--green);
+    cursor: pointer;
+    font-weight: 400;
+    padding-right: 20px;
+}
+.Artist-top > p:hover{
+    color: white;
+}
+.Artist-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 60px;
+}
+.Artist-top > h3{
+    align-items: center;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.popular{
+    margin-top: 80px;
+}
+.popular > h3{
+    margin-left: 30px;
+}
+
+.popularCard{
+    margin-bottom: 120px;
+    flex-wrap: wrap;
+margin-left: 30px;
+}

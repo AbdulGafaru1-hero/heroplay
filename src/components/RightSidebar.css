@@ -1,4 +1,32 @@
 .rightSideBar{
    flex: 1;
-   background-color: bisque;
+   overflow: scroll;
+padding-bottom: 100px;
+
+}
+.rightSideBar::-webkit-scrollbar{
+   display: none;
+ }
+
+.top-chart{
+   background: #001b31a2;
+   border-radius: 10px;
+   padding: 20px 15px;
+   margin: 50px 10px;
+   margin-bottom: 50px;
+}
+
+.top-chart > h3{
+   padding: 10px;
+   padding-bottom: 20px;
+}
+.categories > h3{
+   padding: 10px;
+   padding-left: 10px;
+}
+.cats{
+   margin-bottom: 50px;
+   /* padding: 10px; */
+   display: flex;
+   flex-wrap: wrap;
 }

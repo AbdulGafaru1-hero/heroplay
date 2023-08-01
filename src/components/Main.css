@@ -22,9 +22,14 @@ overflow: scroll;
 }
 .input{
     display: flex;
+    position: relative;
 }
 .search-icon{
     color: gray;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+
 }
 hr{
     opacity: 0.3;
@@ -44,7 +49,7 @@ hr{
 
 .banner-info{
     position: absolute;
-    right: 40px;
+    right: 35px;
     bottom: 50px;
    
 }
@@ -73,40 +78,3 @@ hr{
     cursor: pointer;
 }
 
-.trending-top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-.trending-top > h3{
-    align-items: center;
-    font-weight: 400;
-    justify-content: center;
-}
-
-.icon{
-    margin-left: 5px;
-    font-size: 16px;
-    color: var(--green);
-}
-.trending-top > p{
-    font-size: 14px;
-    color: var(--green);
-    cursor: pointer;
-    font-weight: 400;
-    padding-right: 20px;
-}
-
-.trending-top > p:hover{
-    color: white
-}
-
-.trending-musicCard{
-    display: flex;
-    overflow-x: scroll;
-}
-
-.trending-musicCard::-webkit-scrollbar{
-    display: none;
-  }

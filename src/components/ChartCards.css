@@ -1,0 +1,37 @@
+.chartCards{
+    background: var(--bg-color);
+    border-radius: 5px;
+    padding: 10px;  
+    margin-bottom: 15px;
+}
+
+.card-img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.card-img > img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.song > h1{
+    font-size: 14px;
+    color: white
+}
+.song > p{
+    font-weight: 400;
+    margin-top: -5px;
+    font-size: 12px;
+    color: gray;
+    
+}
+.fav{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: auto;
+}

@@ -1,0 +1,22 @@
+.category{
+    display: flex;
+    
+}
+
+.cat-bg{
+    background: var(--bg);
+    padding: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin: 5px;
+}
+
+.category > h3{
+    position: absolute;
+    left: 10px;
+}

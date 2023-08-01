@@ -1,11 +1,12 @@
 .footer{
     position: absolute;
  bottom: 0;
-margin: 0 auto;
+margin-left: 10px;
+
 background: #00223e;
 /* opacity: 0.4; */
 z-index: 100;
-min-width: 100%;
+min-width: 98%;
 height: 100px;
 border-top-left-radius: 10PX;
 border-top-right-radius: 10PX;
@@ -71,7 +72,7 @@ align-items: center;
 }
 .share{
     font-size: 18px;
-    color: gray;
+    color: gray !important;
     padding: 2px;
 }
 
