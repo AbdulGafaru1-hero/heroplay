@@ -20,6 +20,9 @@ overflow: scroll;
     background-color: var(--bg-color) transparent;
     border-radius: 5px;
 }
+input[type=text] {
+    color: gray;
+}
 .input{
     display: flex;
     position: relative;
@@ -78,3 +81,37 @@ hr{
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+   .main{
+    flex: 2;
+   }
+   .banner{
+    width: 450px;
+    height: 230px;
+   }
+   .banner-info{
+    right: 5px;
+   }
+   .banner-info > h3{
+    font-size: 30px;
+    line-height: 26px;
+   }
+   .banner-info > p{
+    font-size: 12px;
+   }
+   .banner-info > button{
+    padding: 12px 30px;
+   }
+}
+
+@media (max-width: 425px){
+    .main{
+        flex: 5;
+        height: 100vh;
+    }
+    .banner{
+        width: 380px;
+        height: 230px;
+        align-items: center;
+       }
+}

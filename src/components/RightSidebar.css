@@ -30,3 +30,24 @@ padding-bottom: 100px;
    display: flex;
    flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+   .rightSideBar{
+      flex: 1;
+      background-color: blueviolet;
+   }
+   .cats{
+      align-items: center;
+      margin-left: 10px;   
+   }
+  
+   .categories > h3{
+      text-align: center;
+   }
+}
+@media (max-width: 425px){
+   .rightSideBar{
+      top: 200px !important;
+     flex:1;
+   }
+}

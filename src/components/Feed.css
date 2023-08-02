@@ -7,3 +7,14 @@
 .feed::-webkit-scrollbar{
     display: none;
   }
+
+  @media (max-width: 425px) {
+    .feed{
+        flex-direction: column;
+     height: 100vh;
+     /* background-color: yellow; */
+    }
+    .feedMain {
+        background-color: yellowgreen;
+    }
+  }
