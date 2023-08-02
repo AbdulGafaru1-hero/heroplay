@@ -81,6 +81,7 @@ hr{
     cursor: pointer;
 }
 
+
 @media (max-width: 768px) {
    .main{
     flex: 2;

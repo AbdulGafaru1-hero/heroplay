@@ -1,10 +1,15 @@
 import './Main.css'
 import { BsSearch} from 'react-icons/bs';
-import Cards from './Cards'
+import Cards from './Cards';
+
+
+
+
 function Main() {
   return (
     <div className='main'>
     <div className="hero-section">
+  
     <div className="input">
       <input type="text" placeholder="Search for song/artiste.." className="search-input"/>
       <BsSearch className='search-icon'/>

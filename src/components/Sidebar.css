@@ -1,116 +1,120 @@
-.sidebar{
-    flex: 1.25;
-    background-color:  var(--bg);
-    border-right: 1px solid gray;
-    padding: 20px 30px;
+/* Sidebar CSS */
+.sidebar {
+  flex: 1.25;
+  background-color: var(--bg);
+  border-right: 1px solid gray;
+  padding: 20px 30px;
+  transition: transform 0.3s;
+  transform: translateX(0);
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    color: #01ff89;
-    gap: 5px;
-    cursor: pointer;
+.sidebar.open {
+  transform: translateX(-100%);
 }
 
-.logo h1{
-    font-size: 24px;
+.logo {
+  display: flex;
+  align-items: center;
+  color: #01ff89;
+  gap: 5px;
+  cursor: pointer;
 }
 
-.icon{
-    font-size: 24px;
-}
-.menu-items{
-    margin-top: 50px;
+.logo h1 {
+  font-size: 24px;
 }
 
-.item{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
-    color: #eee;
-    font-size: 20px;
-    cursor: pointer;
+.icon {
+  font-size: 24px;
 }
 
-.item:hover{
-    background: linear-gradient(-90deg, #01ff883f 50%, #01b7ff35 100%);
-border-radius: 5px;
-padding: 10px;
-padding-left: 20px;
+.menu-items {
+  margin-top: 50px;
 }
 
-
-
-.active{
-background: linear-gradient(-90deg, #01ff89 50%, #01b9ff 100%);
-border-radius: 5px;
-padding: 10px;
-padding-left: 20px;
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  color: #eee;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.btn{
-    padding: 12px 40px;
-    width: 200px;
-    margin-top: 30px;
-    font-size: 16px;
-    background: none;
-    border: 1.25px solid rgb(241, 241, 241);;
-    border-radius: 5px;
-    color: rgb(241, 241, 241);
-    font-weight: 700;
-    cursor: pointer;
+.item:hover,
+.active {
+  background: linear-gradient(-90deg, #01ff883f 50%, #01b7ff35 100%);
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
 }
 
-.btn:hover{
-    background-color: rgb(241, 241, 241);
-    color: #011627e0;
-
+.btn {
+  padding: 12px 40px;
+  width: 200px;
+  margin-top: 30px;
+  font-size: 16px;
+  background: none;
+  border: 1.25px solid rgb(241, 241, 241);
+  border-radius: 5px;
+  color: rgb(241, 241, 241);
+  font-weight: 700;
+  cursor: pointer;
 }
-/* .open {
-    transform: translateX(0);
-     flex: 1.25;
-    background-color:  #086ec1e0;
-    border-right: 1px solid gray;
-    padding: 20px 30px;
-  } */
-  .nav-btn{
-    padding: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    font-size: 28px;
-    }
+.menu-icon{
+    font-size:30px !important;
+ position: absolute;
+ right: 20px;
+ top: 10px;
+}
+.btn:hover {
+  background-color: rgb(241, 241, 241);
+  color: #011627e0;
+}
 
-  @media (max-width: 768px) {
-    .responsive-nav{
-        transform: none;
-    }
+/* Media Queries */
+@media (min-width: 768px) {
     .sidebar{
-        display: none;
+        display:none;
     }
-    .sidebar.open{
-        flex: 1.25;
-        background-color:  #61b7fde0;
-        border-right: 1px solid gray;
-        padding: 20px 30px;
-        transition: 1s;
-        transform: translateX(-50px); 
-    }
-    .nav-btn{
-        opacity: 1;
-        visibility: visible;
-        top: 20px;
-        right: 40px;
-    }
-    /* .nav-close{
+   
+  .menu-icon {
+ display: none;
+  }
+  .notOpen{
+    background-color: blueviolet;
+  } 
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+    color: #01ff89;
+    cursor: pointer;
+  }
+}
+
+/* Add transition to smoothly animate the sidebar's appearance */
+.sidebar {
     position: absolute;
-    top: 40px;
-    right: 40px;
-} */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%; /* Adjust the width as needed */
+    background-color: var(--bg);
+    border-right: 1px solid gray;
+    padding: 20px 30px;
+    transition: transform 0.3s ease;
+    /* The sidebar will slide in from the left when opened */
+    transform: translateX(-100%);
+    z-index: 2; /* Make the sidebar overlap other components */
+  }
+
+.sidebar.open {
+  /* Translate the sidebar off-screen when it's closed */
+  transform: translateX(0);
+}
+
+.container {
+    position: relative;
+    margin-left: 50%; /* Adjust the margin to make space for the sidebar */
   }

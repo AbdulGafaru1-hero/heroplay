@@ -5,10 +5,11 @@ import Feed from './components/Feed'
 import Footer from './components/Footer';
 
 function App() {
+  
   return (
     <div className="app">
-     <Sidebar className="mainSidebar"/>
-     <Feed/>
+     <Sidebar/>
+     <Feed />
      <Footer/>
     </div>
   );
