@@ -106,13 +106,31 @@ hr{
 }
 
 @media (max-width: 425px){
-    .main{
+    /* .main{
         flex: 5;
-        height: 100vh;
-    }
+    } */
     .banner{
         width: 380px;
         height: 230px;
         align-items: center;
        }
+}
+
+@media (max-width: 375px){
+    .main{
+        margin: 0;
+    }
+.banner{
+    width: 340px;
+    height: 220px;
+}
+.banner-info{
+   align-items: center;
+   text-align: center;  
+  margin-right: 15px;    
+   top:50px;
+   }
+   .banner-info > h3{
+    line-height: 32px;
+   }
 }

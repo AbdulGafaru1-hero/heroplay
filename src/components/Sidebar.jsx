@@ -16,7 +16,7 @@ function Sidebar() {
     <>
       {/* Mobile Menu Icon */}
       <div className="menu-icon" onClick={handleMenuIconClick}>
-        {isSidebarOpen ? <AiOutlineCloseSquare className="icon" /> : <BiMenu className="icon" />}
+        {isSidebarOpen ? <AiOutlineCloseSquare className="menuIcon" /> : <BiMenu className="menuIcon" />}
       </div>
 
       {/* Sidebar */}

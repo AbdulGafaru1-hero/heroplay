@@ -63,10 +63,11 @@
   cursor: pointer;
 }
 .menu-icon{
-    font-size:30px !important;
+   font-size:30px;
  position: absolute;
  right: 20px;
  top: 10px;
+ color: #01ff89;
 }
 .btn:hover {
   background-color: rgb(241, 241, 241);
@@ -74,22 +75,19 @@
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
-    .sidebar{
+@media (max-width: 768px) {
+    /* .sidebar{
         display:none;
-    }
+    } */
    
-  .menu-icon {
+  /* .menu-icon {
  display: none;
-  }
-  .notOpen{
-    background-color: blueviolet;
-  } 
+  } */
+
   .menu-icon {
     display: block;
-    font-size: 28px;
-    color: #01ff89;
     cursor: pointer;
+    z-index: 1;
   }
 }
 
@@ -99,22 +97,27 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 50%; /* Adjust the width as needed */
-    background-color: var(--bg);
+    width: 40%; /* Adjust the width as needed */
+    background-color: #011627;
     border-right: 1px solid gray;
     padding: 20px 30px;
     transition: transform 0.3s ease;
     /* The sidebar will slide in from the left when opened */
     transform: translateX(-100%);
+    overflow-y: scroll;
     z-index: 2; /* Make the sidebar overlap other components */
   }
+.sidebar::-webkit-scrollbar{
+  display: none;
+}
 
 .sidebar.open {
   /* Translate the sidebar off-screen when it's closed */
   transform: translateX(0);
+ 
 }
 
-.container {
+/* .container {
     position: relative;
-    margin-left: 50%; /* Adjust the margin to make space for the sidebar */
-  }
+    margin-left: 50%; /* Adjust the margin to make space for the sidebar 
+  } */

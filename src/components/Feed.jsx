@@ -5,8 +5,8 @@ import Main from './Main'
 function Feed() {
   return (
     <div className='feed'>
-      <Main className="feedMain" />
-     < RightSidebar className="feedSidebar"/> 
+      <Main/>
+     < RightSidebar /> 
     </div>
   )
   }

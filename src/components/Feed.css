@@ -2,6 +2,7 @@
     flex: 5.5;
     display: flex;
     overflow: scroll;
+    height: 100vh;
 }
 
 .feed::-webkit-scrollbar{
@@ -12,10 +13,8 @@
   @media (max-width: 425px) {
     .feed{
         flex-direction: column;
-     height: 100vh;
-     /* background-color: yellow; */
+    justify-content: space-between;
+    flex: 1;
     }
-    .feedMain {
-        background-color: yellowgreen;
-    }
+   
   }

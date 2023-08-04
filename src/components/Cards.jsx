@@ -111,8 +111,6 @@ name = {"Strongman"}/>
   name = {"Burner Boy"}
   />
 
- 
-
   <SongCard 
   image = "https://yt3.googleusercontent.com/WEOXI5pZS7Ss2DqrNWZTMuBG3essqcumqG0yhusQAYXcexGxy7pYJuIrreTpYTmTexEXQXIXCA=s900-c-k-c0x00ffffff-no-rj" alt = "stonebwoy"
   title = {"Into the Future"}
