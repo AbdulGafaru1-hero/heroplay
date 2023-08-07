@@ -131,6 +131,12 @@ align-items: center;
 }
 
 @media (max-width: 425px){
-   
- 
+   .footer{
+    flex-direction: column;
+    padding: 10px 0 50px 0;
+    min-width: 96%;
+   }
+   .footer-bottom{
+    display: none;
+   }
 }
