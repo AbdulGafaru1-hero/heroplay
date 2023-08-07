@@ -120,10 +120,7 @@ align-items: center;
     border-radius: 20px;
   
 }
-/* .items{
-    align-items: center;
-    display: flex;
-} */
+
 .circle2{
     background-color: white;
     border-radius: 50%;
@@ -131,4 +128,9 @@ align-items: center;
     width: 15px;
     margin-top: -5px;
     margin-left: 148px;
+}
+
+@media (max-width: 425px){
+   
+ 
 }

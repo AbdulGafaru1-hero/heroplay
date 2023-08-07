@@ -1,6 +1,8 @@
 .category{
     display: flex;
-    
+    justify-content: center;
+   margin-left:60px;
+   margin-right: -50px;
 }
 
 .cat-bg{
@@ -14,6 +16,7 @@
     justify-content: center;
     display: flex;
     margin: 5px;
+    cursor: pointer;
 }
 
 .category > h3{
@@ -24,6 +27,20 @@
 @media (max-width: 768px){
     .cat-bg{
         width: 180px;
-        background-color: yellow;
+    }
+}
+@media (max-width: 425px){
+    .category{
+
+    }
+    .cat-bg{
+        width:300px;
+       margin-left: -20px;
+    }
+}
+@media (max-width: 375px){
+    .cat-bg{
+        width:300px;
+margin-left: -50px;
     }
 }

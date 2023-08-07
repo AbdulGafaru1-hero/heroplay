@@ -6,6 +6,7 @@
   padding: 20px 30px;
   transition: transform 0.3s;
   transform: translateX(0);
+  /* position:absolute; */
 }
 
 .sidebar.open {
@@ -63,11 +64,12 @@
   cursor: pointer;
 }
 .menu-icon{
-   font-size:30px;
+   font-size:34px;
  position: absolute;
  right: 20px;
  top: 10px;
  color: #01ff89;
+display: none;
 }
 .btn:hover {
   background-color: rgb(241, 241, 241);
@@ -76,48 +78,35 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-    /* .sidebar{
-        display:none;
-    } */
    
-  /* .menu-icon {
- display: none;
-  } */
-
   .menu-icon {
-    display: block;
+   display: block;
     cursor: pointer;
     z-index: 1;
   }
-}
 
-/* Add transition to smoothly animate the sidebar's appearance */
 .sidebar {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    width: 40%; /* Adjust the width as needed */
+    width: 60%; 
     background-color: #011627;
     border-right: 1px solid gray;
     padding: 20px 30px;
     transition: transform 0.3s ease;
-    /* The sidebar will slide in from the left when opened */
     transform: translateX(-100%);
     overflow-y: scroll;
-    z-index: 2; /* Make the sidebar overlap other components */
+    z-index: 2; 
   }
 .sidebar::-webkit-scrollbar{
   display: none;
 }
 
 .sidebar.open {
-  /* Translate the sidebar off-screen when it's closed */
+
   transform: translateX(0);
  
 }
 
-/* .container {
-    position: relative;
-    margin-left: 50%; /* Adjust the margin to make space for the sidebar 
-  } */
+}
