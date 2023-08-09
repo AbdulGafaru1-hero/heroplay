@@ -87,8 +87,11 @@ margin-left: 30px;
     }
 }
 @media (max-width: 375px){
+ 
     .popularCard{
+      width: 350px;
         justify-content: center;
-        margin: auto;
+        margin-bottom: 50px;
+       
     }
 }

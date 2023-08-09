@@ -49,3 +49,14 @@ display: inline;
     color: gray;
     padding-left: 10px;
 }
+
+@media (max-width: 375px){
+    .card{
+        width: 150px;
+        margin: 10px;
+    }
+    .card > img{
+        width: 150px;
+    }
+    
+}

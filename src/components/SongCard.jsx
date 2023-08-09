@@ -3,7 +3,7 @@ import { BsFillPlayCircleFill} from 'react-icons/bs';
 
 function SongCard({ image, title, name, alt}) {
   return (
-    <div className='card'>
+    <div className='card mobile-card'>
     <BsFillPlayCircleFill className="play-button"/>
    <img src={image} alt={alt} />
    <h3>{title}</h3>

@@ -132,11 +132,25 @@ align-items: center;
 
 @media (max-width: 425px){
    .footer{
-    flex-direction: column;
-    padding: 10px 0 50px 0;
-    min-width: 96%;
+    /* flex-direction: column;
+    padding: 10px 0 50px 0; */
+    min-width: 94%;
+   margin-bottom: 20px;  
+   /* max-width: 400px;    */
    }
    .footer-bottom{
     display: none;
+   }
+   .footer-centerBottom{
+    display: none;
+   }
+   .footer-centerTop .icon{
+display: none;
+   }
+   .footer-centerTop .play{
+    display: block;
+    font-size: 40px !important;
+    padding-right: 50px;
+    margin-top: -15px;
    }
 }
