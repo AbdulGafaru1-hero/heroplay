@@ -39,11 +39,16 @@ padding-bottom: 100px;
    }
    .cats{
       align-items: center;
-      margin-left: 10px;   
+     margin-left: -50px;
    }
   
    .categories > h3{
       text-align: center;
       margin: 0 auto;
    }
+}
+@media (max-width: 425px) {
+.cats{
+   margin: 0 auto;
+}
 }
