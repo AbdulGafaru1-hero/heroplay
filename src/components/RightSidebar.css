@@ -34,7 +34,7 @@ padding-bottom: 100px;
 @media (max-width: 768px) {
    .rightSideBar{
       flex: 1;
-  margin-bottom: 50px;
+  background-color: blueviolet;
   z-index: 1;
    }
    .cats{
