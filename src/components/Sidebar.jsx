@@ -6,9 +6,9 @@ import { RiCompassDiscoverLine } from 'react-icons/ri';
 import { BiMenu } from 'react-icons/bi';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Search from "../pages/discover/Search";
-import Playlist from "../pages/discover/Playlist";
-import Favourite from "../pages/discover/Favourite";
-import Login from "../pages/discover/Login";
+import Playlist from "../pages/Playlist/Playlist";
+import Favourite from "../pages/Favourites/Favourite";
+import Login from "../pages/Login/Login";
 
 function Sidebar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
