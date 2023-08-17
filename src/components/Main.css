@@ -1,6 +1,6 @@
 .main{
     flex: 2;
-overflow: scroll;
+    overflow: scroll;
 }
 
 .main::-webkit-scrollbar{

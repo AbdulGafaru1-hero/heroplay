@@ -1,8 +1,7 @@
 .category{
     display: flex;
     justify-content: center;
-   margin-left:60px;
-   margin-right: -50px;
+    margin: 0 auto;
 }
 
 .cat-bg{
@@ -30,17 +29,8 @@
     }
 }
 @media (max-width: 425px){
-    .category{
-
-    }
     .cat-bg{
         width:300px;
-       margin-left: -20px;
-    }
-}
-@media (max-width: 375px){
-    .cat-bg{
-        width:300px;
-margin-left: -50px;
+        margin: 10px auto;
     }
 }

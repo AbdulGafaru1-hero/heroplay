@@ -1,8 +1,7 @@
 .rightSideBar{
    flex: 1;
-   overflow: scroll;
 padding-bottom: 100px;
-
+overflow: scroll;
 }
 .rightSideBar::-webkit-scrollbar{
    display: none;
@@ -35,7 +34,6 @@ padding-bottom: 100px;
    .rightSideBar{
       flex: 1;
   background-color: blueviolet;
-  z-index: 1;
    }
    .cats{
       align-items: center;
